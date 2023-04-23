@@ -109,11 +109,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-block: 8px;
+    padding-block: 2px;
   }
   .nav__menuWrapper {
     display: flex;
-    gap: 12px;
+    gap: 8px;
     align-items: baseline;
   }
   .container2 {

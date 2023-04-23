@@ -125,11 +125,11 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        padding-block: 8px;
+        padding-block: 2px;
     }
     .nav__menuWrapper{
         display: flex;
-        gap: 12px;
+        gap: 8px;
         align-items: baseline;
     }
     .container2{
@@ -139,6 +139,7 @@ body {
     .main__media{
       min-width: 250px;
     }
+
     p {
       min-width: 18ch;
     }
@@ -148,5 +149,6 @@ body {
   .section1{
     max-width: 1500px;
   }
+  
 
 }
