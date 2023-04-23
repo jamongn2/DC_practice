@@ -1,0 +1,20 @@
+
+@media(max-width:506px){
+    .nav{
+      font-weight: 600;
+    }
+    .nav .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-block: 12px;
+    }
+    .nav__menuWrapper{
+        display: flex;
+        gap: 12px;
+        align-items: baseline;
+    }
+    p {
+        min-width: 18ch;
+      }
+}

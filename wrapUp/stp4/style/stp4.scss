@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section{
+    background-color: green;
+}
+.container {
+    background-color: red;
+    // background-color: green; 
+    $padding-inline-value: 64px;
+    max-width: 1200px + 2 * $padding-inline-value;
+    margin-inline: auto;
+    padding-inline: $padding-inline-value;
+  }
+.wrapper {
+    /* background-color: blue; */
+    padding-block : 64px;
+
+}
+body {
+    color: black;
+}
+
+.main{
+  &__media{
+    // background-color: rgb(206, 232, 255);
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.button {
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: aquamarine;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.nav {
+    color: white;
+    font-weight: 700;
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-block: 12px;
+    }
+    &__menuWrapper {
+      display: flex;
+      gap: 24px;
+      align-items: baseline;
+    }
+  }
+
+  #hero1 {
+    text-align: center;
+    .button {
+      margin-inline: auto;
+    }
+    .main {
+      &__text {
+        max-width: 600px;
+        margin-bottom: 24px;
+        margin-inline: auto;
+      }
+      &__media {
+        aspect-ratio: 16/9;
+      }
+    }
+
+  }
+.container2{
+    padding-inline: 80px;
+    width: auto;
+    padding-bottom: 12px;
+    margin-inline: auto;
+
+
+}
+.section1{
+  background-color: blue;
+  $padding-inline-value: 16px;
+  max-width: 1200px + 2 * $padding-inline-value;
+  margin-inline: auto;
+  padding-inline: $padding-inline-value;
+}
+
+#hero2{
+  .container2{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    & >*{
+      flex: 1;
+    }
+  }
+  .main{
+    &__text{
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+
+
+
+@media(max-width:650px){
+    .nav{
+      font-weight: 600;
+    }
+    .nav .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-block: 12px;
+    }
+    .nav__menuWrapper{
+        display: flex;
+        gap: 12px;
+        align-items: baseline;
+    }
+    .container2{
+      padding-inline: 30px;
+    }
+
+    .main__media{
+      min-width: 250px;
+    }
+    p {
+      min-width: 18ch;
+    }
+  }    
+
+@media(min-width:500px){
+  .section1{
+    max-width: 1500px;
+  }
+
+}
